@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import React
 
 class ViewController: UIViewController {
 
@@ -19,6 +20,28 @@ class ViewController: UIViewController {
         let alertController = UIAlertController(title: "Welcome to My First App", message: "Hello World", preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
         present(alertController, animated: true, completion: nil)
+    }
+    
+    @IBAction func callTheReact(sender: UIButton) {
+        NSLog("Hello")
+        let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
+        let mockData:NSDictionary = ["scores":
+            [
+                ["name":"Alex", "value":"42"],
+                ["name":"Joel", "value":"10"]
+            ]
+        ]
+        
+        let rootView = RCTRootView(
+            bundleURL: jsCodeLocation,
+            moduleName: "linger",
+            initialProperties: mockData as [NSObject : AnyObject],
+            launchOptions: nil
+        )
+        
+        let vc = UIViewController()
+        vc.view = rootView
+        self.present(vc, animated: true, completion: nil)
     }
 
 }

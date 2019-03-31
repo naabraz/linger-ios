@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		36494B78C4BD9D5DB8EC0BFD /* Pods_linger_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D16C95D4C875B73FF4506C /* Pods_linger_ios.framework */; };
+		9C0A654E2251625500B5E890 /* DoubleConversion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0A654D2251625500B5E890 /* DoubleConversion.framework */; };
+		9C0A65502251625A00B5E890 /* folly.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0A654F2251625A00B5E890 /* folly.framework */; };
+		9C0A65522251625C00B5E890 /* glog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0A65512251625C00B5E890 /* glog.framework */; };
+		9C0A65542251626300B5E890 /* React.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0A65532251626300B5E890 /* React.framework */; };
+		9C0A65562251626600B5E890 /* yoga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0A65552251626600B5E890 /* yoga.framework */; };
 		9CE69E6C22514D28004C74D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE69E6B22514D28004C74D3 /* AppDelegate.swift */; };
 		9CE69E6E22514D28004C74D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE69E6D22514D28004C74D3 /* ViewController.swift */; };
 		9CE69E7122514D28004C74D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE69E6F22514D28004C74D3 /* Main.storyboard */; };
@@ -15,6 +21,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		60D16C95D4C875B73FF4506C /* Pods_linger_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_linger_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0A654D2251625500B5E890 /* DoubleConversion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DoubleConversion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0A654F2251625A00B5E890 /* folly.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = folly.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0A65512251625C00B5E890 /* glog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = glog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0A65532251626300B5E890 /* React.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = React.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0A65552251626600B5E890 /* yoga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = yoga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE69E6822514D28004C74D3 /* linger-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "linger-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE69E6B22514D28004C74D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CE69E6D22514D28004C74D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +34,8 @@
 		9CE69E7222514D29004C74D3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CE69E7522514D29004C74D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CE69E7722514D29004C74D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0F5875D68E07ED625E8F3F7 /* Pods-linger-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-linger-ios.release.xcconfig"; path = "Target Support Files/Pods-linger-ios/Pods-linger-ios.release.xcconfig"; sourceTree = "<group>"; };
+		FE6C1B2CB09A6DAF847DC843 /* Pods-linger-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-linger-ios.debug.xcconfig"; path = "Target Support Files/Pods-linger-ios/Pods-linger-ios.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +43,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C0A65562251626600B5E890 /* yoga.framework in Frameworks */,
+				9C0A65542251626300B5E890 /* React.framework in Frameworks */,
+				9C0A65522251625C00B5E890 /* glog.framework in Frameworks */,
+				9C0A65502251625A00B5E890 /* folly.framework in Frameworks */,
+				9C0A654E2251625500B5E890 /* DoubleConversion.framework in Frameworks */,
+				36494B78C4BD9D5DB8EC0BFD /* Pods_linger_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E29A4E1EB1676E8E8BD2AF9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C0A65552251626600B5E890 /* yoga.framework */,
+				9C0A65532251626300B5E890 /* React.framework */,
+				9C0A65512251625C00B5E890 /* glog.framework */,
+				9C0A654F2251625A00B5E890 /* folly.framework */,
+				9C0A654D2251625500B5E890 /* DoubleConversion.framework */,
+				60D16C95D4C875B73FF4506C /* Pods_linger_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9539775A34066A755A0BB322 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FE6C1B2CB09A6DAF847DC843 /* Pods-linger-ios.debug.xcconfig */,
+				E0F5875D68E07ED625E8F3F7 /* Pods-linger-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9CE69E5F22514D28004C74D3 = {
 			isa = PBXGroup;
 			children = (
 				9CE69E6A22514D28004C74D3 /* linger-ios */,
 				9CE69E6922514D28004C74D3 /* Products */,
+				9539775A34066A755A0BB322 /* Pods */,
+				5E29A4E1EB1676E8E8BD2AF9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CE69E7A22514D29004C74D3 /* Build configuration list for PBXNativeTarget "linger-ios" */;
 			buildPhases = (
+				D035C3D1202D2A491082703C /* [CP] Check Pods Manifest.lock */,
 				9CE69E6422514D28004C74D3 /* Sources */,
 				9CE69E6522514D28004C74D3 /* Frameworks */,
 				9CE69E6622514D28004C74D3 /* Resources */,
+				C1E886F389385777F02B6D0F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +175,61 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C1E886F389385777F02B6D0F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-linger-ios/Pods-linger-ios-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/React/React.framework",
+				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
+				"${BUILT_PRODUCTS_DIR}/yoga/yoga.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-linger-ios/Pods-linger-ios-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D035C3D1202D2A491082703C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-linger-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CE69E6422514D28004C74D3 /* Sources */ = {
@@ -280,6 +381,7 @@
 		};
 		9CE69E7B22514D29004C74D3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE6C1B2CB09A6DAF847DC843 /* Pods-linger-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +400,7 @@
 		};
 		9CE69E7C22514D29004C74D3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0F5875D68E07ED625E8F3F7 /* Pods-linger-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
