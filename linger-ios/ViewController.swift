@@ -28,8 +28,9 @@ class ViewController: UIViewController {
         let mockData:NSDictionary = ["scores":
             [
                 ["name":"Alex", "value":"42"],
-                ["name":"Joel", "value":"10"]
-            ]
+                ["name":"Joel", "value":"16"]
+            ],
+            "AppName": "Scores"
         ]
         
         let rootView = RCTRootView(

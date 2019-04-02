@@ -43,8 +43,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C0A65562251626600B5E890 /* yoga.framework in Frameworks */,
 				9C0A65542251626300B5E890 /* React.framework in Frameworks */,
+				9C0A65562251626600B5E890 /* yoga.framework in Frameworks */,
 				9C0A65522251625C00B5E890 /* glog.framework in Frameworks */,
 				9C0A65502251625A00B5E890 /* folly.framework in Frameworks */,
 				9C0A654E2251625500B5E890 /* DoubleConversion.framework in Frameworks */,
