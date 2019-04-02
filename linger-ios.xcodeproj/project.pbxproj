@@ -13,6 +13,7 @@
 		9C0A65522251625C00B5E890 /* glog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0A65512251625C00B5E890 /* glog.framework */; };
 		9C0A65542251626300B5E890 /* React.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0A65532251626300B5E890 /* React.framework */; };
 		9C0A65562251626600B5E890 /* yoga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0A65552251626600B5E890 /* yoga.framework */; };
+		9C20722E225307D5003D0E79 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C20722D225307D5003D0E79 /* main.jsbundle */; };
 		9CE69E6C22514D28004C74D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE69E6B22514D28004C74D3 /* AppDelegate.swift */; };
 		9CE69E6E22514D28004C74D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE69E6D22514D28004C74D3 /* ViewController.swift */; };
 		9CE69E7122514D28004C74D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE69E6F22514D28004C74D3 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 		9C0A65512251625C00B5E890 /* glog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = glog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0A65532251626300B5E890 /* React.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = React.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0A65552251626600B5E890 /* yoga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = yoga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C20722D225307D5003D0E79 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
 		9CE69E6822514D28004C74D3 /* linger-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "linger-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE69E6B22514D28004C74D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CE69E6D22514D28004C74D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		9CE69E6A22514D28004C74D3 /* linger-ios */ = {
 			isa = PBXGroup;
 			children = (
+				9C20722D225307D5003D0E79 /* main.jsbundle */,
 				9CE69E6B22514D28004C74D3 /* AppDelegate.swift */,
 				9CE69E6D22514D28004C74D3 /* ViewController.swift */,
 				9CE69E6F22514D28004C74D3 /* Main.storyboard */,
@@ -171,6 +174,7 @@
 				9CE69E7622514D29004C74D3 /* LaunchScreen.storyboard in Resources */,
 				9CE69E7322514D29004C74D3 /* Assets.xcassets in Resources */,
 				9CE69E7122514D28004C74D3 /* Main.storyboard in Resources */,
+				9C20722E225307D5003D0E79 /* main.jsbundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

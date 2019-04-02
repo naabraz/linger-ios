@@ -31,7 +31,7 @@ class ViewController: UIViewController {
     }
     
     func callReact(module: String) {
-        let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
+        let jsCodeLocation = URL(string: "main.jsbundle")
         let mockData:NSDictionary = ["scores":
             [
                 ["name":"Alex", "value":"42"],
