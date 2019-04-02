@@ -22,15 +22,22 @@ class ViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
-    @IBAction func callTheReact(sender: UIButton) {
-        NSLog("Hello")
+    @IBAction func callScores(sender: UIButton) {
+        callReact(module: "Scores")
+    }
+    
+    @IBAction func callNotScores(sender: UIButton) {
+        callReact(module: "NotScores")
+    }
+    
+    func callReact(module: String) {
         let jsCodeLocation = URL(string: "http://localhost:8081/index.bundle?platform=ios")
         let mockData:NSDictionary = ["scores":
             [
                 ["name":"Alex", "value":"42"],
                 ["name":"Joel", "value":"16"]
             ],
-            "AppName": "Scores"
+            "AppName": module
         ]
         
         let rootView = RCTRootView(
