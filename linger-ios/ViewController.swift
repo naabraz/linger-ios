@@ -8,18 +8,13 @@
 
 import UIKit
 import React
+import CodePush
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-    }
-    
-    @IBAction func showMessage(sender: UIButton) {
-        let alertController = UIAlertController(title: "Welcome to My First App", message: "Hello World", preferredStyle: UIAlertController.Style.alert)
-        alertController.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
-        present(alertController, animated: true, completion: nil)
     }
     
     @IBAction func callScores(sender: UIButton) {
@@ -30,19 +25,10 @@ class ViewController: UIViewController {
         callReact(module: "NotScores")
     }
     
-    func baixar(){
-        guard let url = URL(string: "https://www.tutorialspoint.com/swift/swift_tutorial.pdf") else { return }
-        
-        let urlSession = URLSession(configuration: .default, delegate: self as? URLSessionDelegate, delegateQueue: OperationQueue())
-        
-        let downloadTask = urlSession.downloadTask(with: url)
-        downloadTask.resume()
-    }
-
     
     func callReact(module: String) {
-        let jsCodeLocation = URL(string: "main.jsbundle")
-        baixar();
+        let jsCodeLocation = CodePush.bundleURL()
+
         let mockData:NSDictionary = ["scores":
             [
                 ["name":"Alex", "value":"42"],

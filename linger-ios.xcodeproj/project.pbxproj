@@ -13,8 +13,8 @@
 		9C0A65522251625C00B5E890 /* glog.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0A65512251625C00B5E890 /* glog.framework */; };
 		9C0A65542251626300B5E890 /* React.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0A65532251626300B5E890 /* React.framework */; };
 		9C0A65562251626600B5E890 /* yoga.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C0A65552251626600B5E890 /* yoga.framework */; };
-		9CC20E522265662100EF4F60 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9CC20E512265662100EF4F60 /* assets */; };
-		9CC20E562265676100EF4F60 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 9CC20E552265676100EF4F60 /* main.jsbundle */; };
+		9C63840C226A7C8F004E15E6 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 9C63840A226A7C8F004E15E6 /* assets */; };
+		9C63840D226A7C8F004E15E6 /* main.jsbundle in Resources */ = {isa = PBXBuildFile; fileRef = 9C63840B226A7C8F004E15E6 /* main.jsbundle */; };
 		9CE69E6C22514D28004C74D3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE69E6B22514D28004C74D3 /* AppDelegate.swift */; };
 		9CE69E6E22514D28004C74D3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE69E6D22514D28004C74D3 /* ViewController.swift */; };
 		9CE69E7122514D28004C74D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CE69E6F22514D28004C74D3 /* Main.storyboard */; };
@@ -29,8 +29,8 @@
 		9C0A65512251625C00B5E890 /* glog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = glog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0A65532251626300B5E890 /* React.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = React.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0A65552251626600B5E890 /* yoga.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = yoga.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CC20E512265662100EF4F60 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
-		9CC20E552265676100EF4F60 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
+		9C63840A226A7C8F004E15E6 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; name = assets; path = "linger-ios/assets"; sourceTree = "<group>"; };
+		9C63840B226A7C8F004E15E6 /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = text; name = main.jsbundle; path = "linger-ios/main.jsbundle"; sourceTree = "<group>"; };
 		9CE69E6822514D28004C74D3 /* linger-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "linger-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CE69E6B22514D28004C74D3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CE69E6D22514D28004C74D3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -84,6 +84,8 @@
 		9CE69E5F22514D28004C74D3 = {
 			isa = PBXGroup;
 			children = (
+				9C63840A226A7C8F004E15E6 /* assets */,
+				9C63840B226A7C8F004E15E6 /* main.jsbundle */,
 				9CE69E6A22514D28004C74D3 /* linger-ios */,
 				9CE69E6922514D28004C74D3 /* Products */,
 				9539775A34066A755A0BB322 /* Pods */,
@@ -102,8 +104,6 @@
 		9CE69E6A22514D28004C74D3 /* linger-ios */ = {
 			isa = PBXGroup;
 			children = (
-				9CC20E552265676100EF4F60 /* main.jsbundle */,
-				9CC20E512265662100EF4F60 /* assets */,
 				9CE69E6B22514D28004C74D3 /* AppDelegate.swift */,
 				9CE69E6D22514D28004C74D3 /* ViewController.swift */,
 				9CE69E6F22514D28004C74D3 /* Main.storyboard */,
@@ -124,6 +124,7 @@
 				D035C3D1202D2A491082703C /* [CP] Check Pods Manifest.lock */,
 				9CE69E6422514D28004C74D3 /* Sources */,
 				9CE69E6522514D28004C74D3 /* Frameworks */,
+				9CAEDCAF226A7253005A4523 /* ShellScript */,
 				9CE69E6622514D28004C74D3 /* Resources */,
 				C1E886F389385777F02B6D0F /* [CP] Embed Pods Frameworks */,
 			);
@@ -174,9 +175,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C63840C226A7C8F004E15E6 /* assets in Resources */,
+				9C63840D226A7C8F004E15E6 /* main.jsbundle in Resources */,
 				9CE69E7622514D29004C74D3 /* LaunchScreen.storyboard in Resources */,
-				9CC20E522265662100EF4F60 /* assets in Resources */,
-				9CC20E562265676100EF4F60 /* main.jsbundle in Resources */,
 				9CE69E7322514D29004C74D3 /* Assets.xcassets in Resources */,
 				9CE69E7122514D28004C74D3 /* Main.storyboard in Resources */,
 			);
@@ -185,6 +186,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		9CAEDCAF226A7253005A4523 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "git clone https://github.com/naabraz/rn-bundle-ios.git\ncp rn-bundle-ios/main.jsbundle linger-ios\ncp -r rn-bundle-ios/assets linger-ios\nrm -rf rn-bundle-ios\n";
+		};
 		C1E886F389385777F02B6D0F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
