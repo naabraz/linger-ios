@@ -17,6 +17,7 @@ target 'linger-ios' do
     'RCTNetwork',
     'RCTWebSocket', # needed for debugging
     # Add any other subspecs you want to use in your project
+    'RCTImage'
   ]
   # Explicitly include Yoga if you are using RN >= 0.42.0
   pod "yoga", :path => "../linger/node_modules/react-native/ReactCommon/yoga"
@@ -25,5 +26,7 @@ target 'linger-ios' do
   pod 'DoubleConversion', :podspec => '../linger/node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../linger/node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../linger/node_modules/react-native/third-party-podspecs/Folly.podspec'
+
+  pod 'CodePush', :path => '../linger/node_modules/react-native-code-push'
 
 end

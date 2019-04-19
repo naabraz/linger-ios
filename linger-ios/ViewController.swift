@@ -30,8 +30,19 @@ class ViewController: UIViewController {
         callReact(module: "NotScores")
     }
     
+    func baixar(){
+        guard let url = URL(string: "https://www.tutorialspoint.com/swift/swift_tutorial.pdf") else { return }
+        
+        let urlSession = URLSession(configuration: .default, delegate: self as? URLSessionDelegate, delegateQueue: OperationQueue())
+        
+        let downloadTask = urlSession.downloadTask(with: url)
+        downloadTask.resume()
+    }
+
+    
     func callReact(module: String) {
         let jsCodeLocation = URL(string: "main.jsbundle")
+        baixar();
         let mockData:NSDictionary = ["scores":
             [
                 ["name":"Alex", "value":"42"],
