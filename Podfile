@@ -9,7 +9,7 @@ target 'linger-ios' do
 
   # Your 'node_modules' directory is probably in the root of your project,
   # but if not, adjust the `:path` accordingly
-  pod 'React', :path => 'react-native-specs', :subspecs => [
+  pod 'React', :path => '../react-native-specs/react-native', :subspecs => [
     'Core',
     'CxxBridge', # Include this for RN >= 0.47
     'DevSupport', # Include this to enable In-App Devmenu if RN >= 0.43
@@ -20,13 +20,13 @@ target 'linger-ios' do
     'RCTImage'
   ]
   # Explicitly include Yoga if you are using RN >= 0.42.0
-  pod "yoga", :path => "react-native-specs/yoga"
+  pod "yoga", :path => "../react-native-specs/react-native/ReactCommon/yoga"
 
   # Third party deps podspec link
-  pod 'DoubleConversion', :podspec => 'react-native-specs/third-party-podspecs/DoubleConversion.podspec'
-  pod 'glog', :podspec => 'react-native-specs/third-party-podspecs/glog.podspec'
-  pod 'Folly', :podspec => 'react-native-specs/third-party-podspecs/Folly.podspec'
+  pod 'DoubleConversion', :podspec => '../react-native-specs/react-native/third-party-podspecs/DoubleConversion.podspec'
+  pod 'glog', :podspec => '../react-native-specs/react-native/third-party-podspecs/glog.podspec'
+  pod 'Folly', :podspec => '../react-native-specs/react-native/third-party-podspecs/Folly.podspec'
 
-  pod 'CodePush', :path => 'react-native-specs/codepush'
+  pod 'CodePush', :path => '../react-native-specs/react-native-code-push'
 
 end
