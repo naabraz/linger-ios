@@ -122,9 +122,9 @@
 			buildConfigurationList = 9CE69E7A22514D29004C74D3 /* Build configuration list for PBXNativeTarget "linger-ios" */;
 			buildPhases = (
 				D035C3D1202D2A491082703C /* [CP] Check Pods Manifest.lock */,
+				9CAEDCAF226A7253005A4523 /* ShellScript */,
 				9CE69E6422514D28004C74D3 /* Sources */,
 				9CE69E6522514D28004C74D3 /* Frameworks */,
-				9CAEDCAF226A7253005A4523 /* ShellScript */,
 				9CE69E6622514D28004C74D3 /* Resources */,
 				C1E886F389385777F02B6D0F /* [CP] Embed Pods Frameworks */,
 			);
@@ -201,7 +201,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "git clone https://github.com/naabraz/rn-bundle-ios.git\ncp rn-bundle-ios/main.jsbundle linger-ios\ncp -r rn-bundle-ios/assets linger-ios\nrm -rf rn-bundle-ios\n";
+			shellScript = "git clone https://github.com/naabraz/rn-bundle-ios.git\ncp rn-bundle-ios/main.jsbundle linger-ios\ncp -r rn-bundle-ios/assets linger-ios\nrm -rf rn-bundle-ios\nnpm install\n";
 		};
 		C1E886F389385777F02B6D0F /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;

@@ -1,0 +1,10 @@
+{
+  "name": "linger-ios",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "react": "16.8.3",
+    "react-native": "0.59.2",
+    "react-native-code-push": "^5.6.0"
+  }
+}
