@@ -43,7 +43,7 @@ class ViewController: UIViewController {
             initialProperties: mockData as [NSObject : AnyObject],
             launchOptions: nil
         )
-        
+
         let vc = UIViewController()
         vc.view = rootView
         self.present(vc, animated: true, completion: nil)
